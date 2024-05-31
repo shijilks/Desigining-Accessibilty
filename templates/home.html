@@ -21,13 +21,12 @@
   </div>
 
 {%endblock banner-slider %}
+
 {% block information %}
 <div class="container">
 <div class="row bg-succes text-center p-5 text-dark border-bottom shadow">
 <h1>Products</h1>
-<small class="fs-5">GARDEN Supermarket revolution is here and is taking over command . Leading grocery store in Pavaratty is now live and ready to serve all your home and personal needs. We have an array of world-class products across different categories of produce such as fruits & vegetables, oils & spices, rice & other grains, meat & fish, bakery & dairy, etc. On top of these, we also provide a number of checkout-ready items that include beverages, snacks, personal care products, baby & kids products, cleaning & household equipments, home & kitchenware, school & stationery and pet care products. GARDEN Supermarket is empowering your grocery shopping experience with high quality items.
-
-</small>
+<small class="fs-5">Kerala Co-operative Milk Marketing Federation (KCMMF) was formed in 1980 as a state adjunct of the National Dairy Programme ‘Operation Flood’. It is a three-tiered organization. At the grassroots level MILMA has 3076 Anand model primary milk co-operative societies as on 31.03.2022 with 10.4 lakh local milk producing farmers as members. These primary societies are grouped under three Regional Co-operative Milk Producers’ Unions viz TRCMPU for Thiruvananthapuram region, ERCMPU for Ernakulam region and MRCMPU for Malabar region.  </small>
 </div>
 </div>
 {% endblock information %}
@@ -35,81 +34,18 @@
 {% block main-content %}
 
 <div class="container">
-    <h2 class="text-center">DaryProducts</h2>
-    <br></br>
-    <div class="row container">
-        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-<div class="goodnesssec buttermilk smbg">
-<a class="#">
-  <div class="goodnessseccont text-center">
-    <img src="{% static 'images/icbars.png' %}" class="img-responsive center-block" alt="">
-    <p class="mlkpro">Ghee</p>
-</div>
-</a>
-</div>
-        </div>
-        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-<div class="goodnesssec buttermilk curdbgpro">
-<a class="#">
-  <div class="goodnessseccont text-center">
-    <img src="{% static 'images/curd-total.png' %}" class="img-responsive center-block" alt="">
-    <p class="mlkpro">Curd</p>
-</div>
-</a>
-</div>
-        </div>
-        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-<div class="goodnesssec buttermilk buttermilk">
-<a class="#">
-  <div class="goodnessseccont text-center">
-    <img src="{% static 'images/kulfi.png' %}" class="img-responsive center-block" alt="">
-    <p class="mlkpro">Kulfi</p>
-</div>
-</a>
-</div>
-        </div>
-    </div>
-    <br><br>
-    <div class="container">
-      <div class="row container">
-          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-  <div class="goodnesssec buttermilk smbg">
-  <a class="#">
-    <div class="goodnessseccont text-center">
-      <img src="{% static 'images/milk-shake-chocolate.png' %}" class="img-responsive center-block" alt="">
-      <p class="mlkpro">Mikshake</p>
-  </div>
-  </a>
-  </div>
-          </div>
-          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-  <div class="goodnesssec buttermilk curdbgpro">
-  <a class="#">
-    <div class="goodnessseccont text-center">
-      <img src="{% static 'images/cow-Milk.png' %}" class="img-responsive center-block" alt="">
-      <p class="mlkpro">Milk</p>
-  </div>
-  </a>
-  </div>
-          </div>
-          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" dat-wow-duration="is"
-          data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;" >
-  <div class="goodnesssec buttermilk buttermilk">
-  <a class="#">
-    <div class="goodnessseccont text-center">
-      <img src="{% static 'images/icbars.png' %}" class="img-responsive center-block" alt="">
-      <p class="mlkpro">Icebar</p>
-  </div>
-  </a>
-  </div>
-          </div>
-      </div>
-</div>
-<br/><br/>
+  <h2 class="text-center">Products</h2>
+  <br>
+  <div class="container">
+    <div class="main">
+      <a href="{% url 'category' 'GH' %}">
 
+        <div class="goodnessseccont text-center">
+          <img src="{% static 'images/cow-ghee.png' %}" class="img-responsive center-block" alt="">
+          <p class="mlkpro">Ghee</p>
+      </div>
+      </a>
+      </div>
+      
+             
 {% endblock main-content %}
